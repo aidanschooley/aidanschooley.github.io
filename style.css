@@ -84,6 +84,7 @@
     .aMenu{
         display: block !important;
       }
+     
 }
 
 footer{
@@ -108,11 +109,11 @@ footer a:hover{
   background-color: #001a2b;
 }
 .name-title{
-  font-size: 70px;
+  font-size: 5vw;
 
 }
 .bio-title{
-  font-size: 20px;
+  font-size: 2vw;
 
 }
 .main-body {
@@ -154,8 +155,8 @@ footer a:hover{
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-  gap: 20px; /* Space between grid items */
-  max-width: 1200px; /* Restrict width to prevent excessive stretching */
+  gap: 20px; 
+  max-width: 1200px; 
   width: 100%;
 }
 
@@ -181,8 +182,8 @@ footer a:hover{
     object-fit: cover; 
 }
 .goals{
-  list-style-position: inside; /* Ensures bullets are inside the text area */
-    text-align: center; /* Centers the text */
+  list-style-position: inside; 
+    text-align: center; 
     padding: 0;
 }
 
@@ -227,18 +228,18 @@ button:hover {
 }
 .projects-body {
   display: flex;
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
-  justify-content: space-between; /* Space between cards */
-  gap: 20px; /* Adds space between cards */
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  gap: 20px; 
   padding: 20px;
 }
 
 .project-card {
-  width: 100%; /* Default width for small screens */
-  max-width: 400px; /* Max width of cards */
-  margin-bottom: 20px; /* Space at the bottom of each card */
+  width: 100%; 
+  max-width: 400px; 
+  margin-bottom: 20px; 
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .project-card img {
@@ -249,7 +250,7 @@ button:hover {
 
 @media (min-width: 768px) {
   .project-card{
-      width: 30%; /* On larger screens, make each card take up 30% of the space */
+      width: 30%; 
   }
 }
 .contact-form {
