@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Lexend+Exa:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <script src="app.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>About Me- Portfolio</title>
+</head>
+
+<body class="lexend-exa">
+    <header>
+        <nav>
+
+            <div class="nav-bar">
+                <ul class="navbar-nav">
+                    <div class="hamburger-menu">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                    <div class="aMenu">
+                        <li class="home">
+                            <a class="home-link" href="index.html">Home</a>
+                        </li>
+                        <li class="about-me">
+                            <a class="about-me-link" href="about-me.html">About Me</a>
+                        </li>
+                        <li class="projects">
+                            <a class="projects-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="Contact">
+                            <a class="contact-link" href="contact.html">Contact</a>
+                        </li>
+                    </div>
+                </ul>
+
+            </div>
+
+
+        </nav>
+    </header>
+    <section class="about-me-body">
+        <section class="bio">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Hello! My name is Aidan Schooley</h4>
+                    <p class="card-text">I am a second year computer science major at Houghton University. At Houghton I
+                        am a Ultimate Frisbee
+                        captain and a Koinonia
+                        Worship Leader! I am from Horseheads, New York and am interested in things such as hiking and
+                        music.</p>
+                </div>
+            </div>
+        </section>
+        <section class="skills">
+            <div class="card" style="width:400px">
+                <img class="card-img-top"
+                    src="data:image/png;base64,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"
+                    alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Python</h4>
+
+                </div>
+            </div>
+            <div class="card" style="width:400px">
+                <img class="card-img-top"
+                    src="data:image/png;base64,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"
+                    alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Java</h4>
+
+                </div>
+            </div>
+            <div class="card" style="width:400px">
+                <img class="card-img-top"
+                    src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Hey_Machine_Learning_Logo.png"
+                    alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Machine Learning</h4>
+              
+                </div>
+            </div>
+            <div class="card" style="width:400px">
+                <img class="card-img-top"
+                    src="data:image/png;base64,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"
+                    alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Web Development</h4>
+
+                </div>
+            </div>
+
+        </section>
+        <section class="goals">
+            <h1>Goals</h1>
+            <ul>
+                <li>Become well rounded in Computer Science</li>
+                <li>Learn more about Web Developement</li>
+                <li>Make more Projects</li>
+                <li>Help people by making Web Apps</li>
+                <li>Become a Software Developer</li>
+            </ul>
+        </section>
+        <section class="links">
+            <a class="button-link" href="https://docs.google.com/document/d/1_vyh-YKP6_-a0fFaJUxVpfjLAn_7zmA6/edit?usp=sharing&ouid=114461879566042731372&rtpof=true&sd=true"><button class="button">Resume</buttton></a>
+            <a href="projects.html" class="button-link"><button class="button">Projects</buttton></a>
+        </section>
+
+    </section>
+    <footer>
+        <a href="https://github.com/aidanschooley">My Github</a>
+        <a href="https://www.linkedin.com/in/aidanschooley/">Linkedin</a>
+        <a href="mailto:schooleyaidan7@gmail.com">Email</a>
+    </footer>
+</body>
+
+</html>

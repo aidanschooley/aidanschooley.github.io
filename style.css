@@ -1,0 +1,288 @@
+
+
+  nav{
+    text-align: center;
+  }
+ .navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #003354;
+  }
+  
+  .navbar-nav li {
+    float: left;
+  }
+  
+  .navbar-nav li a {
+    display: block;
+    color: #D9E8F5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .navbar-nav li a:hover {
+    background-color: #001a2b;
+  }
+  body{
+    background-color: #D9E8F5;
+  }
+  .lexend-exa {
+    font-family: "Lexend Exa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+  }
+  .portfolio-picture{
+    width: 300px;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 0;
+        margin-right: 0;
+        
+
+    }
+
+    nav ul {
+        display: block;
+    }
+    nav ul:last-child {
+        width: 100%;
+        flex-basis: 100%;
+    }
+    nav ul li {
+        margin-bottom: 0;
+        width: 100%;
+        text-align: right;
+        padding: 0.5em;
+
+  }
+  .aMenu{
+    display: none;
+  }
+  .line {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: #D9E8F5;
+    margin: 5px 5px;
+  }
+  .hamburger-menu {
+    cursor: pointer;
+    float: right;
+    padding: 5px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+    .aMenu{
+        display: block !important;
+      }
+}
+
+footer{
+  background-color: #003354;
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-decoration: none;
+    color: #D9E8F5;
+    text-align: center;
+    padding: 10px;
+
+}
+footer a{
+  color: #D9E8F5;
+  padding: 5px;
+  text-decoration: none;
+  margin:0;
+}
+footer a:hover{
+  background-color: #001a2b;
+}
+.name-title{
+  font-size: 70px;
+
+}
+.bio-title{
+  font-size: 20px;
+
+}
+.main-body {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  width: 100%;
+  margin-top:100px;
+}
+
+.main-bio {
+  width: 50%; 
+  text-align: center;
+}
+
+.image-div {
+  width: 50%; 
+  display: flex;
+  justify-content: center; 
+  position: relative; 
+}
+
+.portfolio-picture {
+  border: 10px solid #003354;
+  padding: 10px;
+  max-width: 100%;
+  max-height: 100%;
+  width: 500px;
+}
+.about-me-body{
+  margin: 20px;
+}
+.skills {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 20px; /* Space between grid items */
+  max-width: 1200px; /* Restrict width to prevent excessive stretching */
+  width: 100%;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 15px;
+}
+.card img{
+  width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+}
+.goals{
+  list-style-position: inside; /* Ensures bullets are inside the text area */
+    text-align: center; /* Centers the text */
+    padding: 0;
+}
+
+.button {
+  background-color: #01263e; 
+  border: none;
+
+  padding: 12px 28px; 
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px; 
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  margin: 10px
+}
+
+button:hover {
+  background-color: #0278c9; 
+
+}
+
+
+.button-link{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+
+}
+
+.link a:hover {
+  color: #0278c9;
+  text-decoration: underline;
+}
+.links{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin: 50px 0; 
+}
+.projects-body {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  justify-content: space-between; /* Space between cards */
+  gap: 20px; /* Adds space between cards */
+  padding: 20px;
+}
+
+.project-card {
+  width: 100%; /* Default width for small screens */
+  max-width: 400px; /* Max width of cards */
+  margin-bottom: 20px; /* Space at the bottom of each card */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card shadow */
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+@media (min-width: 768px) {
+  .project-card{
+      width: 30%; /* On larger screens, make each card take up 30% of the space */
+  }
+}
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contact-form h2 {
+  text-align: center;
+
+}
+.contact-form .form-control {
+  border-radius: 5px;
+}
+.contact-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 100%;
+}
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+.contact-form .form-control {
+  width: 100%; 
+  border-radius: 5px;
+  box-sizing: border-box; 
+}
+.contact-body{
+  margin-top: 20px;
+}
